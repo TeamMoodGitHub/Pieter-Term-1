@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS Tool</title>
+</head>
+<body>
+	<! <img src="{{url_for('static', filename='webapp.svg')}}" alt="hoi">
+	<img src="data:image/png;base64,{{ plot_url }}" width="600"><br/>
+	<img src="data:image/png;base64,{{ plot_url2 }}" width="600"><br/>
+    <button onclick="goBack()">Go Back</button>
+	<script>
+		function goBack() {
+		window.history.back();
+		}
+	</script>
+</body>
+</html>
