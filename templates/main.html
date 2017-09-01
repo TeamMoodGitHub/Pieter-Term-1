@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.firstb {
+    width: 100px;
+	height: 50px;
+	float: left;
+	text-align: center;
+}
+.firstb > .child {
+	line-height: 50px;
+}
+
+.normalb {
+	border-left: 1px solid gray;
+    width: 100px;
+	height: 50px;
+	float: left;
+	text-align: center;
+}
+.normalb > .child {
+	line-height: 50px;
+}
+</style>
+</head>
+
+
+<body>
+    <h1>Hello {{ username }}!</h1>
+	<h2>Here's an overview of your last 20 games</h2><br/>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[0]}}>
+		<span class="child">{{ champion[0] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[0]}}>
+		<span class="child">{{ kills[0] }} / {{ deaths[0] }} / {{ assists[0] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[0]}}>
+		<span class="child">CS: {{ CS[0] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[0]}}>
+		<span class="child">{{ duration[0] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail1">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[1]}}>
+		<span class="child">{{ champion[1] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[1]}}>
+		<span class="child">{{ kills[1] }} / {{ deaths[1] }} / {{ assists[1] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[1]}}>
+		<span class="child">CS: {{ CS[1] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[1]}}>
+		<span class="child">{{ duration[1] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail2">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[2]}}>
+		<span class="child">{{ champion[2] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[2]}}>
+		<span class="child">{{ kills[2] }} / {{ deaths[2] }} / {{ assists[2] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[2]}}>
+		<span class="child">CS: {{ CS[2] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[2]}}>
+		<span class="child">{{ duration[2] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail3">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[3]}}>
+		<span class="child">{{ champion[3] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[3]}}>
+		<span class="child">{{ kills[3] }} / {{ deaths[3] }} / {{ assists[3] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[3]}}>
+		<span class="child">CS: {{ CS[3] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[3]}}>
+		<span class="child">{{ duration[3] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail4">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[4]}}>
+		<span class="child">{{ champion[4] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[4]}}>
+		<span class="child">{{ kills[4] }} / {{ deaths[4] }} / {{ assists[4] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[4]}}>
+		<span class="child">CS: {{ CS[4] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[4]}}>
+		<span class="child">{{ duration[4] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail5">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[5]}}>
+		<span class="child">{{ champion[5] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[5]}}>
+		<span class="child">{{ kills[5] }} / {{ deaths[5] }} / {{ assists[5] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[5]}}>
+		<span class="child">CS: {{ CS[5] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[5]}}>
+		<span class="child">{{ duration[5] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail6">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[6]}}>
+		<span class="child">{{ champion[6] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[6]}}>
+		<span class="child">{{ kills[6] }} / {{ deaths[6] }} / {{ assists[6] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[6]}}>
+		<span class="child">CS: {{ CS[6] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[6]}}>
+		<span class="child">{{ duration[6] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail7">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[7]}}>
+		<span class="child">{{ champion[7] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[7]}}>
+		<span class="child">{{ kills[7] }} / {{ deaths[7] }} / {{ assists[7] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[7]}}>
+		<span class="child">CS: {{ CS[7] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[7]}}>
+		<span class="child">{{ duration[7] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail8">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[8]}}>
+		<span class="child">{{ champion[8] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[8]}}>
+		<span class="child">{{ kills[8] }} / {{ deaths[8] }} / {{ assists[8] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[8]}}>
+		<span class="child">CS: {{ CS[8] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[8]}}>
+		<span class="child">{{ duration[8] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail9">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[9]}}>
+		<span class="child">{{ champion[9] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[9]}}>
+		<span class="child">{{ kills[9] }} / {{ deaths[9] }} / {{ assists[9] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[9]}}>
+		<span class="child">CS: {{ CS[9] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[9]}}>
+		<span class="child">{{ duration[9] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail10">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[10]}}>
+		<span class="child">{{ champion[10] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[10]}}>
+		<span class="child">{{ kills[10] }} / {{ deaths[10] }} / {{ assists[10] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[10]}}>
+		<span class="child">CS: {{ CS[10] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[10]}}>
+		<span class="child">{{ duration[10] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail11">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[11]}}>
+		<span class="child">{{ champion[11] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[11]}}>
+		<span class="child">{{ kills[11] }} / {{ deaths[11] }} / {{ assists[11] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[11]}}>
+		<span class="child">CS: {{ CS[11] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[11]}}>
+		<span class="child">{{ duration[11] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail12">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[12]}}>
+		<span class="child">{{ champion[12] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[12]}}>
+		<span class="child">{{ kills[12] }} / {{ deaths[12] }} / {{ assists[12] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[12]}}>
+		<span class="child">CS: {{ CS[12] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[12]}}>
+		<span class="child">{{ duration[12] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail13">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[13]}}>
+		<span class="child">{{ champion[13] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[13]}}>
+		<span class="child">{{ kills[13] }} / {{ deaths[13] }} / {{ assists[13] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[13]}}>
+		<span class="child">CS: {{ CS[13] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[13]}}>
+		<span class="child">{{ duration[13] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail14">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[14]}}>
+		<span class="child">{{ champion[14] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[14]}}>
+		<span class="child">{{ kills[14] }} / {{ deaths[14] }} / {{ assists[14] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[14]}}>
+		<span class="child">CS: {{ CS[14] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[14]}}>
+		<span class="child">{{ duration[14] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail15">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[15]}}>
+		<span class="child">{{ champion[15] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[15]}}>
+		<span class="child">{{ kills[15] }} / {{ deaths[15] }} / {{ assists[15] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[15]}}>
+		<span class="child">CS: {{ CS[15] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[15]}}>
+		<span class="child">{{ duration[15] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail16">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[16]}}>
+		<span class="child">{{ champion[16] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[16]}}>
+		<span class="child">{{ kills[16] }} / {{ deaths[16] }} / {{ assists[16] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[16]}}>
+		<span class="child">CS: {{ CS[16] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[16]}}>
+		<span class="child">{{ duration[16] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail17">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[17]}}>
+		<span class="child">{{ champion[17] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[17]}}>
+		<span class="child">{{ kills[17] }} / {{ deaths[17] }} / {{ assists[17] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[17]}}>
+		<span class="child">CS: {{ CS[17] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[17]}}>
+		<span class="child">{{ duration[17] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail18">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[18]}}>
+		<span class="child">{{ champion[18] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[18]}}>
+		<span class="child">{{ kills[18] }} / {{ deaths[18] }} / {{ assists[18] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[18]}}>
+		<span class="child">CS: {{ CS[18] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[18]}}>
+		<span class="child">{{ duration[18] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail19">More Details</a> </span>
+	</div><br/><br/><br>
+	<hr align="left" width="21.3%">
+	<div class="firstb"; style=background-color:{{color[19]}}>
+		<span class="child">{{ champion[19] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[19]}}>
+		<span class="child">{{ kills[19] }} / {{ deaths[19] }} / {{ assists[19] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[19]}}>
+		<span class="child">CS: {{ CS[19] }}</span>
+	</div>
+	<div class="normalb"; style=background-color:{{color[19]}}>
+		<span class="child">{{ duration[19] }}</span>
+	</div>
+	<div class="normalb">
+		<span class="child"> <a href="http://localhost:5000/detail20">More Details</a> </span>
+	</div>
+</body>
+</html>
