@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template, url_for
-from matplotlib.figure import Figure
 from io import BytesIO
 import numpy as np
 import matplotlib.pyplot as plt
