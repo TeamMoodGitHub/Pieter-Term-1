@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, url_for
+#from matplotlib.figure import Figure
 from io import BytesIO
 import numpy as np
 import matplotlib.pyplot as plt
@@ -68,8 +69,13 @@ def basics():
 	base = "https://" + regionID + ".api.riotgames.com/lol/"
 	key = "api_key=" + key
 	#static_base = "http://ddragon.leagueoflegends.com/"
+	
 	idJSON = get_id(base,username,key)
-	ID = str(idJSON['id'])
+	
+	try:
+		ID = str(idJSON['id'])
+	except KeyError:
+		return render_template("error.html",username=username)
 	accountID = str(idJSON['accountId'])
 	try:
 		matchlistJSON = get_matchlist(base,accountID,key)
